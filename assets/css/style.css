@@ -828,40 +828,6 @@ a {
   }
 }
 
-/* Header + internal page spacing fix */
-.site-header {
-  min-height: 96px;
-  background:
-    linear-gradient(to bottom, rgba(0, 0, 0, 0.96), rgba(0, 0, 0, 0.62), transparent);
-}
-
-.page-hero {
-  min-height: 72vh;
-  padding-top: 230px;
-  padding-bottom: 95px;
-}
-
-.page-hero .eyebrow {
-  margin-bottom: 24px;
-}
-
-.page-hero h1 {
-  max-width: 1080px;
-}
-
-@media (max-width: 980px) {
-  .site-header {
-    min-height: 82px;
-    background: rgba(0, 0, 0, 0.92);
-  }
-
-  .page-hero {
-    min-height: 64vh;
-    padding-top: 175px;
-    padding-bottom: 72px;
-  }
-}
-
 /* Premium page width alignment */
 .site-header {
   padding-left: clamp(24px, 6vw, 96px);
@@ -876,10 +842,6 @@ a {
   padding-right: clamp(24px, 6vw, 96px);
 }
 
-.page-hero {
-  padding-top: 250px;
-}
-
 @media (min-width: 1400px) {
   .hero-content,
   .page-hero > *,
@@ -889,18 +851,39 @@ a {
   }
 }
 
-/* Final internal page hero positioning */
+/* Clean internal page hero positioning */
+.site-header {
+  min-height: 88px;
+  padding-left: clamp(24px, 6vw, 96px);
+  padding-right: clamp(24px, 6vw, 96px);
+  background: rgba(0, 0, 0, 0.88);
+  backdrop-filter: blur(14px);
+}
+
 .page-hero {
   min-height: auto;
-  padding-top: 150px;
-  padding-bottom: 80px;
+  padding-top: 118px;
+  padding-bottom: 70px;
+  padding-left: clamp(24px, 6vw, 96px);
+  padding-right: clamp(24px, 6vw, 96px);
   justify-content: flex-start;
 }
 
+.page-hero .eyebrow {
+  margin-bottom: 18px;
+}
+
+.page-hero h1 {
+  max-width: 980px;
+}
+
 @media (max-width: 980px) {
+  .site-header {
+    min-height: 76px;
+  }
+
   .page-hero {
-    min-height: auto;
-    padding-top: 120px;
-    padding-bottom: 64px;
+    padding-top: 104px;
+    padding-bottom: 56px;
   }
 }
