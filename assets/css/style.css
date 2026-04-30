@@ -630,3 +630,44 @@ a {
     grid-template-columns: repeat(2, 1fr);
   }
 }
+
+
+
+.page-hero {
+  min-height: 62vh;
+  padding: 170px 56px 80px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+
+  background:
+    radial-gradient(circle at 72% 40%, rgba(214, 195, 163, 0.14), transparent 28%),
+    linear-gradient(to top, var(--black), rgba(0, 0, 0, 0.3)),
+    #0b0b0b;
+}
+
+.page-hero h1 {
+  margin: 0;
+  max-width: 900px;
+  font-family: var(--heading);
+  font-size: clamp(52px, 8vw, 96px);
+  line-height: 0.95;
+  font-weight: 500;
+  letter-spacing: -0.05em;
+}
+
+.page-hero p:not(.eyebrow) {
+  max-width: 680px;
+  margin: 26px 0 0;
+  color: var(--muted);
+  font-size: 18px;
+  line-height: 1.75;
+}
+
+@media (max-width: 980px) {
+  .page-hero {
+    min-height: 56vh;
+    padding: 140px 24px 70px;
+  }
+}
