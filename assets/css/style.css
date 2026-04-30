@@ -970,3 +970,128 @@ a {
     grid-row: span 1;
   }
 }
+/* Client galleries page */
+.client-galleries-section {
+  background: linear-gradient(to bottom, #070707, #101010);
+}
+
+.client-gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 22px;
+}
+
+.client-gallery-card {
+  position: relative;
+  min-height: 460px;
+  overflow: hidden;
+  display: block;
+  border: 1px solid var(--line);
+  background: var(--dark-soft);
+}
+
+.client-gallery-image {
+  position: absolute;
+  inset: 0;
+  background-size: cover;
+  background-position: center;
+  transition: transform 0.7s ease;
+}
+
+.client-gallery-card::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background:
+    linear-gradient(to top, rgba(0, 0, 0, 0.88), transparent 62%),
+    linear-gradient(to right, rgba(0, 0, 0, 0.32), transparent);
+}
+
+.client-gallery-card:hover .client-gallery-image {
+  transform: scale(1.06);
+}
+
+.gallery-cover-1 {
+  background-image: url("../images/portfolio/portfolio-01.jpg");
+}
+
+.gallery-cover-2 {
+  background-image: url("../images/portfolio/portfolio-02.jpg");
+}
+
+.gallery-cover-3 {
+  background-image: url("../images/portfolio/portfolio-03.jpg");
+}
+
+.client-gallery-info {
+  position: absolute;
+  left: 28px;
+  right: 28px;
+  bottom: 28px;
+  z-index: 2;
+}
+
+.client-gallery-info span,
+.upcoming-gallery-card span {
+  color: var(--gold);
+  font-size: 11px;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+}
+
+.client-gallery-info h3 {
+  margin: 12px 0 8px;
+  font-family: var(--heading);
+  font-size: 36px;
+  line-height: 1;
+  font-weight: 500;
+}
+
+.client-gallery-info p {
+  margin: 0;
+  color: var(--muted);
+  line-height: 1.6;
+}
+
+.upcoming-galleries-section {
+  background: #0c0c0c;
+}
+
+.upcoming-gallery-list {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 18px;
+}
+
+.upcoming-gallery-card {
+  min-height: 220px;
+  padding: 28px;
+  border: 1px solid var(--line);
+  background:
+    radial-gradient(circle at top right, rgba(214, 195, 163, 0.10), transparent 34%),
+    rgba(255, 255, 255, 0.035);
+}
+
+.upcoming-gallery-card h3 {
+  margin: 28px 0 12px;
+  font-family: var(--heading);
+  font-size: 32px;
+  font-weight: 500;
+}
+
+.upcoming-gallery-card p {
+  margin: 0;
+  color: var(--muted);
+  line-height: 1.6;
+}
+
+@media (max-width: 980px) {
+  .client-gallery-grid,
+  .upcoming-gallery-list {
+    grid-template-columns: 1fr;
+  }
+
+  .client-gallery-card {
+    min-height: 420px;
+  }
+}
