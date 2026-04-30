@@ -887,3 +887,20 @@ a {
     padding-bottom: 56px;
   }
 }
+
+/* Tighter internal page hero spacing */
+.page-hero {
+  padding-top: 96px;
+  padding-bottom: 54px;
+}
+
+.page-hero .eyebrow {
+  margin-bottom: 12px;
+}
+
+@media (max-width: 980px) {
+  .page-hero {
+    padding-top: 88px;
+    padding-bottom: 44px;
+  }
+}
