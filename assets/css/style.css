@@ -888,3 +888,19 @@ a {
     max-width: 1240px;
   }
 }
+
+/* Final internal page hero positioning */
+.page-hero {
+  min-height: auto;
+  padding-top: 150px;
+  padding-bottom: 80px;
+  justify-content: flex-start;
+}
+
+@media (max-width: 980px) {
+  .page-hero {
+    min-height: auto;
+    padding-top: 120px;
+    padding-bottom: 64px;
+  }
+}
