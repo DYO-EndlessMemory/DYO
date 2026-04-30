@@ -861,3 +861,30 @@ a {
     padding-bottom: 72px;
   }
 }
+
+/* Premium page width alignment */
+.site-header {
+  padding-left: clamp(24px, 6vw, 96px);
+  padding-right: clamp(24px, 6vw, 96px);
+}
+
+.hero,
+.section,
+.final-cta,
+.page-hero {
+  padding-left: clamp(24px, 6vw, 96px);
+  padding-right: clamp(24px, 6vw, 96px);
+}
+
+.page-hero {
+  padding-top: 250px;
+}
+
+@media (min-width: 1400px) {
+  .hero-content,
+  .page-hero > *,
+  .section > *,
+  .final-cta > * {
+    max-width: 1240px;
+  }
+}
