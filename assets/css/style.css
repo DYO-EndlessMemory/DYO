@@ -9,7 +9,7 @@
   --line: rgba(255, 255, 255, 0.12);
   --glass: rgba(255, 255, 255, 0.06);
 
-  --heading: "Bodoni 72", "Didot", "Bodoni MT", "Times New Roman", serif;
+  --heading: "Bodoni Moda", "Bodoni 72", "Didot", "Bodoni MT", "Times New Roman", serif;
   --body: Arial, Helvetica, sans-serif;
   --page-x: clamp(24px, 6vw, 96px);
 }
@@ -1411,5 +1411,22 @@ a {
     grid-column: span 1 !important;
     grid-row: span 1 !important;
     background-position: center 28%;
+  }
+}
+
+.hero h1,
+.portfolio-slide-content h2 {
+  text-transform: uppercase;
+  font-weight: 400;
+  letter-spacing: -0.01em;
+  line-height: 0.94;
+}
+
+@media (max-width: 640px) {
+  .hero h1,
+  .portfolio-slide-content h2 {
+    font-size: clamp(42px, 12vw, 62px);
+    line-height: 0.98;
+    letter-spacing: -0.005em;
   }
 }
