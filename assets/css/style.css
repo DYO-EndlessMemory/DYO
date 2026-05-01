@@ -1268,3 +1268,110 @@ a {
     font-size: clamp(46px, 14vw, 72px);
   }
 }
+
+/* Portfolio mosaic gallery */
+
+.portfolio-mosaic-section {
+  background: #0c0c0c;
+}
+
+.portfolio-mosaic {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-auto-rows: 180px;
+  gap: 14px;
+}
+
+.mosaic-item {
+  min-height: 180px;
+  background-size: cover;
+  background-position: center;
+  overflow: hidden;
+  filter: saturate(0.95);
+}
+
+.mosaic-1 {
+  grid-column: span 2;
+  grid-row: span 2;
+  background-image: url("../images/portfolio/portfolio-01.jpg");
+}
+
+.mosaic-2 {
+  grid-column: span 2;
+  background-image: url("../images/gallery/gallery-01.jpg");
+}
+
+.mosaic-3 {
+  grid-column: span 2;
+  grid-row: span 2;
+  background-image: url("../images/portfolio/portfolio-02.jpg");
+}
+
+.mosaic-4 {
+  grid-column: span 2;
+  background-image: url("../images/gallery/gallery-02.jpg");
+}
+
+.mosaic-5 {
+  grid-column: span 3;
+  background-image: url("../images/gallery/gallery-03.jpg");
+}
+
+.mosaic-6 {
+  grid-column: span 3;
+  background-image: url("../images/gallery/gallery-04.jpg");
+}
+
+.mosaic-7 {
+  grid-column: span 2;
+  grid-row: span 2;
+  background-image: url("../images/galleries/vlad-denisa.jpg");
+}
+
+.mosaic-8 {
+  grid-column: span 2;
+  background-image: url("../images/galleries/david-esra.jpg");
+}
+
+.mosaic-9 {
+  grid-column: span 2;
+  background-image: url("../images/galleries/rus-a-viii-a.jpg");
+}
+
+.mosaic-10 {
+  grid-column: span 2;
+  background-image: url("../images/galleries/babeni-a-viii-a.jpg");
+}
+
+.mosaic-11 {
+  grid-column: span 2;
+  background-image: url("../images/galleries/letca-a-viii-a.jpg");
+}
+
+.mosaic-12 {
+  grid-column: span 2;
+  background-image: url("../images/portfolio/portfolio-04.jpg");
+}
+
+@media (max-width: 980px) {
+  .portfolio-mosaic {
+    grid-template-columns: repeat(2, 1fr);
+    grid-auto-rows: 220px;
+  }
+
+  .mosaic-1,
+  .mosaic-2,
+  .mosaic-3,
+  .mosaic-4,
+  .mosaic-5,
+  .mosaic-6,
+  .mosaic-7,
+  .mosaic-8,
+  .mosaic-9,
+  .mosaic-10,
+  .mosaic-11,
+  .mosaic-12 {
+    grid-column: span 1;
+    grid-row: span 1;
+  }
+}
