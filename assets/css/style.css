@@ -9,7 +9,7 @@
   --line: rgba(255, 255, 255, 0.12);
   --glass: rgba(255, 255, 255, 0.06);
 
-  --heading: Georgia, "Times New Roman", serif;
+  --heading: "Bodoni 72", "Didot", "Bodoni MT", "Times New Roman", serif;
   --body: Arial, Helvetica, sans-serif;
   --page-x: clamp(24px, 6vw, 96px);
 }
@@ -231,6 +231,25 @@ a {
 .btn-secondary:hover {
   color: var(--gold);
   border-color: var(--gold);
+}
+
+.hero h1,
+.page-hero h1,
+.portfolio-slide-content h2,
+.section-heading h2,
+.intro h2,
+.film-content h2,
+.gallery-content h2,
+.final-cta h2,
+.testimonials blockquote {
+  font-weight: 400;
+  letter-spacing: -0.025em;
+}
+
+.hero h1,
+.portfolio-slide-content h2 {
+  text-transform: uppercase;
+  letter-spacing: -0.015em;
 }
 
 /* Homepage hero */
