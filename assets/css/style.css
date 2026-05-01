@@ -17,7 +17,7 @@
   --glass: rgba(255, 255, 255, 0.06);
 
   --heading: "Agatho Light Caps", "Baskerville Old Face", "Libre Baskerville", Baskerville, "Times New Roman", serif;
-  
+  --body: Arial, Helvetica, sans-serif;
    --page-x: clamp(24px, 6vw, 96px);
 }
 
@@ -256,8 +256,8 @@ a {
 .hero h1,
 .portfolio-slide-content h2 {
   text-transform: uppercase;
-  font-weight: 400;
-  letter-spacing: 0.01em;
+  font-weight: 300;
+  letter-spacing: 0.035em;
   line-height: 0.96;
 }
 
