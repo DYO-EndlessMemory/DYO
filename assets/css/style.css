@@ -9,7 +9,7 @@
   --line: rgba(255, 255, 255, 0.12);
   --glass: rgba(255, 255, 255, 0.06);
 
-  --heading: "Cormorant Garamond", "Times New Roman", serif;
+  --heading: "Baskerville Old Face", Baskerville, "Libre Baskerville", "Cormorant Garamond", "Times New Roman", serif;
   --body: Arial, Helvetica, sans-serif;
   --page-x: clamp(24px, 6vw, 96px);
 }
@@ -249,9 +249,9 @@ a {
 .hero h1,
 .portfolio-slide-content h2 {
   text-transform: uppercase;
-  font-weight: 500;
-  letter-spacing: 0.015em;
-  line-height: 0.92;
+  font-weight: 400;
+  letter-spacing: 0.01em;
+  line-height: 0.96;
 }
 
 /* Homepage hero */
