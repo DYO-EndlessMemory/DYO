@@ -78,10 +78,38 @@ if (mosaic) {
     "assets/images/portfolio/portfolio-04.jpg"
   ];
 
-  images.forEach((image, index) => {
-    const item = document.createElement("div");
-    item.className = `mosaic-item mosaic-${index + 1}`;
-    item.style.backgroundImage = `url("${image}")`;
-    mosaic.appendChild(item);
+  function getImageOrientation(width, height) {
+    const ratio = width / height;
+
+    if (ratio > 1.18) {
+      return "landscape";
+    }
+
+    if (ratio < 0.85) {
+      return "portrait";
+    }
+
+    return "square";
+  }
+
+  images.forEach((src, index) => {
+    const loader = new Image();
+
+    loader.onload = () => {
+      const orientation = getImageOrientation(loader.naturalWidth, loader.naturalHeight);
+
+      const item = document.createElement("div");
+      item.className = `mosaic-item mosaic-${orientation}`;
+      item.style.backgroundImage = `url("${src}")`;
+      item.setAttribute("aria-label", `Portfolio image ${index + 1}`);
+
+      mosaic.appendChild(item);
+    };
+
+    loader.onerror = () => {
+      console.warn(`Could not load mosaic image: ${src}`);
+    };
+
+    loader.src = src;
   });
 }
