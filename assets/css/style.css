@@ -1020,7 +1020,41 @@ a {
 }
 
 .gallery-cover-3 {
-  background-image: url("../images/portfolio/galleries/rus-a-viii-a.jpg");
+  background-image: url("../images/galleries/rus-a-viii-a.jpg");
+}
+
+.gallery-cover-4 {
+  background-image: url("../images/galleries/babeni-a-viii-a.jpg");
+}
+
+.gallery-cover-5 {
+  background-image: url("../images/galleries/letca-a-viii-a.jpg");
+}
+
+.client-gallery-card.is-disabled {
+  cursor: default;
+}
+
+.client-gallery-card.is-disabled::before {
+  content: "În curând";
+  position: absolute;
+  top: 22px;
+  right: 22px;
+  z-index: 3;
+
+  padding: 8px 12px;
+  border: 1px solid var(--line);
+  background: rgba(0, 0, 0, 0.62);
+  color: var(--gold);
+
+  font-size: 11px;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+}
+
+.client-gallery-card.is-disabled:hover .client-gallery-image {
+  transform: none;
+  filter: grayscale(0.25) brightness(0.78);
 }
 
 .client-gallery-info {
