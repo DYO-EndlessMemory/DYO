@@ -653,6 +653,55 @@ a {
   background: var(--gold);
 }
 
+/* Portfolio mosaic gallery */
+
+.portfolio-mosaic-section {
+  background: #0c0c0c;
+}
+
+.portfolio-mosaic {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-auto-rows: 150px;
+  grid-auto-flow: dense;
+  gap: 14px;
+}
+
+.mosaic-item {
+  min-height: 150px;
+  background-size: cover;
+  background-position: center;
+  overflow: hidden;
+  filter: saturate(0.95);
+}
+
+.mosaic-landscape {
+  grid-column: span 3;
+  grid-row: span 2;
+}
+
+.mosaic-portrait {
+  grid-column: span 2;
+  grid-row: span 3;
+}
+
+.mosaic-square {
+  grid-column: span 2;
+  grid-row: span 2;
+}
+
+@media (max-width: 980px) {
+  .portfolio-mosaic {
+    grid-template-columns: repeat(2, 1fr);
+    grid-auto-rows: 220px;
+  }
+
+  .mosaic-item {
+    grid-column: span 1 !important;
+    grid-row: span 1 !important;
+  }
+}
+
 /* Film section */
 
 .film-feature {
