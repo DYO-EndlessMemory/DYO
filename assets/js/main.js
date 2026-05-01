@@ -98,6 +98,8 @@ if (mosaic) {
     loader.onload = () => {
       const orientation = getImageOrientation(loader.naturalWidth, loader.naturalHeight);
 
+      console.log(src, loader.naturalWidth, loader.naturalHeight, orientation);
+
       const item = document.createElement("div");
       item.className = `mosaic-item mosaic-${orientation}`;
       item.style.backgroundImage = `url("${src}")`;
