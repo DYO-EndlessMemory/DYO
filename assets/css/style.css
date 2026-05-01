@@ -1129,3 +1129,38 @@ a {
     min-height: 420px;
   }
 }
+
+/* Force gallery cover visibility */
+.client-gallery-card {
+  min-height: 460px;
+}
+
+.client-gallery-image {
+  display: block;
+  width: 100%;
+  height: 100%;
+  opacity: 1;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.gallery-cover-1 {
+  background-image: url("../images/galleries/vlad-denisa.jpg") !important;
+}
+
+.gallery-cover-2 {
+  background-image: url("../images/galleries/david-esra.jpg") !important;
+}
+
+.gallery-cover-3 {
+  background-image: url("../images/galleries/rus-a-viii-a.jpg") !important;
+}
+
+.gallery-cover-4 {
+  background-image: url("../images/galleries/babeni-a-viii-a.jpg") !important;
+}
+
+.gallery-cover-5 {
+  background-image: url("../images/galleries/letca-a-viii-a.jpg") !important;
+}
