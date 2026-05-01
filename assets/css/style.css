@@ -1164,3 +1164,17 @@ a {
 .gallery-cover-5 {
   background-image: url("../images/galleries/letca-a-viii-a.jpg") !important;
 }
+
+.portfolio-note {
+  max-width: 760px;
+  margin-top: 42px;
+  padding-top: 28px;
+  border-top: 1px solid var(--line);
+}
+
+.portfolio-note p {
+  margin: 0;
+  color: var(--muted);
+  font-size: 16px;
+  line-height: 1.75;
+}
