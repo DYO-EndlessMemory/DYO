@@ -58,3 +58,30 @@ if (carousel) {
   showSlide(currentIndex);
   startAutoplay();
 }
+
+
+const mosaic = document.querySelector("[data-mosaic]");
+
+if (mosaic) {
+  const images = [
+    "assets/images/portfolio/portfolio-01.jpg",
+    "assets/images/gallery/gallery-01.jpg",
+    "assets/images/portfolio/portfolio-02.jpg",
+    "assets/images/gallery/gallery-02.jpg",
+    "assets/images/gallery/gallery-03.jpg",
+    "assets/images/gallery/gallery-04.jpg",
+    "assets/images/galleries/vlad-denisa.jpg",
+    "assets/images/galleries/david-esra.jpg",
+    "assets/images/galleries/rus-a-viii-a.jpg",
+    "assets/images/galleries/babeni-a-viii-a.jpg",
+    "assets/images/galleries/letca-a-viii-a.jpg",
+    "assets/images/portfolio/portfolio-04.jpg"
+  ];
+
+  images.forEach((image, index) => {
+    const item = document.createElement("div");
+    item.className = `mosaic-item mosaic-${index + 1}`;
+    item.style.backgroundImage = `url("${image}")`;
+    mosaic.appendChild(item);
+  });
+}
