@@ -1429,3 +1429,28 @@ a {
     right: 24px;
   }
 }
+/* Portfolio carousel as page hero */
+.portfolio-carousel-section {
+  padding-top: 0;
+}
+
+.portfolio-carousel {
+  min-height: 100vh;
+  border-top: 0;
+}
+
+.portfolio-slide-content {
+  min-height: 100vh;
+  padding-top: 120px;
+}
+
+@media (max-width: 980px) {
+  .portfolio-carousel {
+    min-height: 92vh;
+  }
+
+  .portfolio-slide-content {
+    min-height: 92vh;
+    padding-top: 110px;
+  }
+}
