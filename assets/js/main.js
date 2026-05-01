@@ -98,8 +98,6 @@ if (mosaic) {
     loader.onload = () => {
       const orientation = getImageOrientation(loader.naturalWidth, loader.naturalHeight);
 
-      console.log(src, loader.naturalWidth, loader.naturalHeight, orientation);
-
       const item = document.createElement("div");
       item.className = `mosaic-item mosaic-${orientation}`;
       item.style.backgroundImage = `url("${src}")`;
@@ -113,5 +111,49 @@ if (mosaic) {
     };
 
     loader.src = src;
+  });
+}
+
+const statNumbers = document.querySelectorAll("[data-count]");
+
+if (statNumbers.length) {
+  const animateNumber = (element) => {
+    const target = Number(element.dataset.count);
+    const suffix = element.dataset.suffix || "";
+    const duration = 1400;
+    const startTime = performance.now();
+
+    const update = (currentTime) => {
+      const elapsed = currentTime - startTime;
+      const progress = Math.min(elapsed / duration, 1);
+      const easedProgress = 1 - Math.pow(1 - progress, 3);
+      const currentValue = Math.round(target * easedProgress);
+
+      element.textContent = `${currentValue}${suffix}`;
+
+      if (progress < 1) {
+        requestAnimationFrame(update);
+      }
+    };
+
+    requestAnimationFrame(update);
+  };
+
+  const statsObserver = new IntersectionObserver(
+    (entries, observer) => {
+      entries.forEach((entry) => {
+        if (!entry.isIntersecting) return;
+
+        animateNumber(entry.target);
+        observer.unobserve(entry.target);
+      });
+    },
+    {
+      threshold: 0.45
+    }
+  );
+
+  statNumbers.forEach((number) => {
+    statsObserver.observe(number);
   });
 }
