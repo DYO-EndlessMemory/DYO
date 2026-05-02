@@ -114,7 +114,6 @@ if (mosaic) {
   });
 }
 
-const statNumbers = document.querySelectorAll("[data-count]");
 
 if (statNumbers.length) {
   const animateNumber = (element) => {
@@ -156,28 +155,4 @@ if (statNumbers.length) {
   statNumbers.forEach((number) => {
     statsObserver.observe(number);
   });
-}
-
-.stats-editorial div {
-  position: relative;
-  overflow: hidden;
-  transition: background 0.3s ease;
-}
-
-.stats-editorial div::after {
-  content: "";
-  position: absolute;
-  inset: auto 0 0 0;
-  height: 1px;
-  background: linear-gradient(to right, transparent, var(--gold), transparent);
-  opacity: 0;
-  transition: opacity 0.3s ease;
-}
-
-.stats-editorial div:hover {
-  background: rgba(255, 255, 255, 0.025);
-}
-
-.stats-editorial div:hover::after {
-  opacity: 1;
 }
