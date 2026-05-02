@@ -245,6 +245,10 @@ a {
   border-color: var(--gold);
 }
 
+.label-mobile {
+  display: none;
+}
+
 /* Homepage hero */
 
 .hero {
@@ -1288,6 +1292,14 @@ a {
   .logo span {
     font-size: 24px;
   }
+
+  .label-desktop {
+  display: none;
+}
+
+.label-mobile {
+  display: inline;
+}
 
   .hero {
     align-items: flex-start;
