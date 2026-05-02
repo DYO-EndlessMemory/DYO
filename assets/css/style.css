@@ -1383,3 +1383,29 @@ a {
     flex-direction: column;
   }
 }
+
+.hero-services {
+  position: absolute;
+  left: var(--page-x);
+  right: var(--page-x);
+  bottom: 34px;
+  z-index: 3;
+
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+
+  padding: 24px 0;
+  border-top: 1px solid var(--line);
+
+  background: linear-gradient(
+    to bottom,
+    rgba(0, 0, 0, 0.16),
+    rgba(0, 0, 0, 0.34)
+  );
+  backdrop-filter: blur(8px);
+}
+@media (max-width: 640px) {
+  .hero-services {
+    display: none;
+  }
+}
