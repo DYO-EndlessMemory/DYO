@@ -360,11 +360,13 @@ a {
   bottom: 210px;
   z-index: 4;
 
-  width: 300px;
-  min-height: 118px;
-  padding: 18px 22px;
+  width: max-content;
+  max-width: none;
+  min-width: 0;
+  min-height: 0;
+  padding: 16px 20px;
 
-  display: flex;
+  display: inline-flex;
   flex-direction: column;
   justify-content: center;
 
