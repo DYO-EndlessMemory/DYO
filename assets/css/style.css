@@ -300,14 +300,17 @@ a {
 .hero h1::after {
   content: "";
   display: block;
-  width: 86px;
-  height: 1px;
+  width: 150px;
+  height: 1.5px;
   margin: 24px 0;
+  border-radius: 999px;
   background: linear-gradient(
     to right,
-    transparent,
-    rgba(214, 195, 163, 0.85),
-    transparent
+    rgba(214, 195, 163, 0.18) 0%,
+    rgba(214, 195, 163, 0.72) 16%,
+    rgba(214, 195, 163, 0.95) 50%,
+    rgba(214, 195, 163, 0.72) 84%,
+    rgba(214, 195, 163, 0.18) 100%
   );
 }
 
@@ -1296,7 +1299,8 @@ a {
   }
 
   .hero h1::after {
-  width: 68px;
+  width: 112px;
+  height: 1.5px;
   margin: 20px 0;
 }
 
