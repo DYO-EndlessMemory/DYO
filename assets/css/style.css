@@ -5,6 +5,13 @@
   font-style: normal;
   font-display: swap;
 }
+@font-face {
+  font-family: "Ms Claudy";
+  src: url("../fonts/MsClaudy-Regular.otf") format("opentype");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
 
 :root {
   --black: #070707;
@@ -360,11 +367,13 @@ a {
 
 .hero-card strong {
   display: block;
-  margin-top: 10px;
-  font-family: var(--heading);
-  font-size: 24px;
-  font-weight: 300;
-  letter-spacing: 0.025em;
+  margin-top: 8px;
+  font-family: "Ms Claudy", cursive;
+  font-size: 46px;
+  line-height: 0.9;
+  font-weight: 400;
+  letter-spacing: 0;
+  color: rgba(255, 255, 255, 0.94);
 }
 
 .hero-card p {
