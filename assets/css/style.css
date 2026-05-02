@@ -291,11 +291,14 @@ a {
   max-width: 720px;
   font-family: var(--heading);
   font-size: clamp(42px, 4.7vw, 66px);
-  line-height: 0.98;
+  line-height: 1.04;
   font-weight: 300;
   letter-spacing: 0.035em;
   text-transform: uppercase;
   white-space: nowrap;
+
+  transform: scaleY(1.08);
+  transform-origin: left top;
 }
 
 .hero h1::after {
