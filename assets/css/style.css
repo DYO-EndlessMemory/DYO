@@ -343,18 +343,15 @@ a {
   margin-top: 52px;
 }
 
-.hero-card {
-  position: absolute;
-  right: var(--page-x);
-  bottom: 190px;
-  z-index: 3;
-
-  width: 280px;
-  padding: 20px 22px;
-
-  background: rgba(10, 10, 10, 0.22);
-  border: 1px solid rgba(255, 255, 255, 0.10);
-  backdrop-filter: blur(6px);
+.hero-card strong {
+  display: block;
+  margin-top: 8px;
+  font-family: "Ms Claudy", cursive;
+  font-size: 44px;
+  line-height: 0.78;
+  font-weight: 400;
+  letter-spacing: 0;
+  color: rgba(255, 255, 255, 0.94);
 }
 
 .hero-card span,
