@@ -390,7 +390,7 @@ a {
 
 .hero-service {
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   gap: 12px;
 
   padding: 0 24px;
@@ -436,7 +436,12 @@ a {
 }
 
 .hero-service p {
-  display: none;
+  display: block;
+  margin: 4px 0 0;
+  max-width: 230px;
+  color: rgba(255, 255, 255, 0.62);
+  font-size: 12px;
+  line-height: 1.45;
 }
 
 /* Stats */
