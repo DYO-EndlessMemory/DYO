@@ -339,15 +339,15 @@ a {
 .hero-card {
   position: absolute;
   right: var(--page-x);
-  bottom: 54px;
+  bottom: 128px;
   z-index: 3;
 
   width: 280px;
   padding: 22px;
 
-  background: rgba(10, 10, 10, 0.58);
+  background: rgba(10, 10, 10, 0.48);
   border: 1px solid var(--line);
-  backdrop-filter: blur(16px);
+  backdrop-filter: blur(14px);
 }
 
 .hero-card span,
