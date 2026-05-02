@@ -255,7 +255,7 @@ a {
   display: flex;
   align-items: flex-start;
 
-  padding: 240px var(--page-x) 80px;
+  padding: 220px var(--page-x) 180px;
 }
 
 .hero-media {
@@ -1408,4 +1408,83 @@ a {
   .hero-services {
     display: none;
   }
+}
+/* Hero services */
+
+.hero-services {
+  position: absolute;
+  left: var(--page-x);
+  right: var(--page-x);
+  bottom: 34px;
+  z-index: 3;
+
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+
+  padding: 24px 0;
+  border-top: 1px solid rgba(214, 195, 163, 0.22);
+
+  background: linear-gradient(
+    to bottom,
+    rgba(0, 0, 0, 0.08),
+    rgba(0, 0, 0, 0.24)
+  );
+  backdrop-filter: blur(4px);
+}
+
+.hero-service {
+  display: grid;
+  grid-template-columns: 42px 1fr;
+  gap: 16px;
+  align-items: start;
+
+  padding: 0 28px;
+  border-right: 1px solid rgba(255, 255, 255, 0.12);
+}
+
+.hero-service:first-child {
+  padding-left: 0;
+}
+
+.hero-service:last-child {
+  padding-right: 0;
+  border-right: 0;
+}
+
+.hero-service-icon {
+  width: 30px;
+  height: 30px;
+  color: var(--gold-soft);
+  opacity: 0.92;
+}
+
+.hero-service-icon svg {
+  display: block;
+  width: 100%;
+  height: 100%;
+
+  fill: none;
+  stroke: currentColor;
+  stroke-width: 1.35;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
+.hero-service h3 {
+  margin: 0 0 7px;
+
+  color: var(--gold);
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+}
+
+.hero-service p {
+  margin: 0;
+  max-width: 240px;
+
+  color: rgba(255, 255, 255, 0.68);
+  font-size: 13px;
+  line-height: 1.55;
 }
