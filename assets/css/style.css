@@ -354,6 +354,20 @@ a {
   color: rgba(255, 255, 255, 0.94);
 }
 
+.hero-card {
+  position: absolute;
+  right: var(--page-x);
+  bottom: 210px;
+  z-index: 4;
+
+  width: 340px;
+  padding: 20px 24px;
+
+  background: rgba(10, 10, 10, 0.22);
+  border: 1px solid rgba(255, 255, 255, 0.10);
+  backdrop-filter: blur(6px);
+}
+
 .hero-card span,
 .portfolio-card span {
   color: var(--gold);
@@ -366,8 +380,8 @@ a {
   display: block;
   margin-top: 8px;
   font-family: "Ms Claudy", cursive;
-  font-size: 46px;
-  line-height: 0.9;
+  font-size: 44px;
+  line-height: 0.78;
   font-weight: 400;
   letter-spacing: 0;
   color: rgba(255, 255, 255, 0.94);
