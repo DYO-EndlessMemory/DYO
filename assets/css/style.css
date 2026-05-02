@@ -255,7 +255,7 @@ a {
   display: flex;
   align-items: flex-start;
 
-  padding: 150px var(--page-x) 80px;
+  padding: 240px var(--page-x) 80px;
 }
 
 .hero-media {
@@ -300,10 +300,15 @@ a {
 .hero h1::after {
   content: "";
   display: block;
-  width: 72px;
+  width: 86px;
   height: 1px;
-  margin: 22px 0;
-  background: rgba(214, 195, 163, 0.75);
+  margin: 24px 0;
+  background: linear-gradient(
+    to right,
+    transparent,
+    rgba(214, 195, 163, 0.85),
+    transparent
+  );
 }
 
 .hero-text {
@@ -1280,7 +1285,7 @@ a {
   .hero {
   align-items: flex-start;
   min-height: 100svh;
-  padding-top: 145px;
+  padding-top: 165px;
 }
 
   .hero h1 {
@@ -1291,9 +1296,9 @@ a {
   }
 
   .hero h1::after {
-    width: 56px;
-    margin: 18px 0;
-  }
+  width: 68px;
+  margin: 20px 0;
+}
 
   .hero-text {
     max-width: 100%;
