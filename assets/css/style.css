@@ -360,36 +360,43 @@ a {
   bottom: 210px;
   z-index: 4;
 
-  width: 340px;
-  padding: 20px 24px;
+  width: 300px;
+  min-height: 118px;
+  padding: 18px 22px;
 
-  background: rgba(10, 10, 10, 0.22);
-  border: 1px solid rgba(255, 255, 255, 0.10);
-  backdrop-filter: blur(6px);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  background: rgba(10, 10, 10, 0.18);
+  border: 1px solid rgba(255, 255, 255, 0.09);
+  backdrop-filter: blur(5px);
 }
 
 .hero-card span,
 .portfolio-card span {
   color: var(--gold);
-  font-size: 11px;
-  letter-spacing: 0.2em;
+  font-size: 10px;
+  letter-spacing: 0.24em;
   text-transform: uppercase;
 }
 
 .hero-card strong {
   display: block;
-  margin-top: 8px;
+  margin-top: 6px;
   font-family: "Ms Claudy", cursive;
-  font-size: 44px;
-  line-height: 0.78;
+  font-size: 40px;
+  line-height: 0.85;
   font-weight: 400;
   letter-spacing: 0;
   color: rgba(255, 255, 255, 0.94);
+  white-space: nowrap;
 }
 
 .hero-card p {
-  margin: 8px 0 0;
-  color: var(--muted);
+  margin: 4px 0 0;
+  color: rgba(255, 255, 255, 0.68);
+  font-size: 13px;
 }
 
 /* Hero services */
