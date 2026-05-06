@@ -1041,6 +1041,10 @@ a {
   background-image: url("../images/galleries/letca-a-viii-a.jpg");
 }
 
+.gallery-cover-weddings-extra {
+  background-image: url("../images/galleries/wedings_extra.jpg");
+}
+
 .client-gallery-info {
   position: absolute;
   left: 28px;
